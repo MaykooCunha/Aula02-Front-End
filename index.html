@@ -1,36 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html lang="pt-br"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 02 - Projeto Final</title>
+    <title>Minha Primeira App Interativa</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Meu Primeiro Projeto Online</h1>
-        <p>Desafio Final - Aula 02 Front-End</p>
+        <h1>Aula Mestra: Web Dev</h1>
     </header>
 
     <main>
-        <section id="sobre">
-            <h2>Sobre o Projeto</h2>
-            <p>Este site foi desenvolvido para praticar HTML, CSS e a publicação no GitHub.</p>
-            
-            <img src="https://via.placeholder.com/400x200" alt="Ilustração de um ecrã de computador com código de programação">
-        </section>
+        <label for="input-usuario">Digita uma tarefa ou termo de busca:</label>
+        
+        <div class="input-group">
+            <input type="text" id="input-usuario" placeholder="Escreve aqui...">
+            <button id="btn-acao">Executar Ação</button>
+        </div>
 
-        <section id="contato">
-            <h2>Interatividade</h2>
-            <p>Clique no botão para testar o seu ficheiro JavaScript:</p>
-            <button id="meu-botao">Testar Agora</button>
-            <div id="resultado-js"></div>
+        <section id="exibicao">
+            <h2>Resultados em tempo real:</h2>
+            <ul id="lista-dinamica">
+                <li>Aguardando interação...</li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Desenvolvido por Mayko Cunha</p>
+        <p>© 2026 - Criado na Aula de Revisão Front-End</p>
     </footer>
 
     <script src="script.js"></script>
